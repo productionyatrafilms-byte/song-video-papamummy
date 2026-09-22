@@ -14,18 +14,6 @@ function val(selectedLang) {
     let Hindi = document.getElementById("hi");
     let Gujrati = document.getElementById("gu");
 
-    // Hindi gets its own dubbed video; English and Gujarati both fall back to the
-    // default (English) video.
-    let songVideo = document.getElementById("songVideo");
-    if (songVideo) {
-        let videoSrc = selectedLang === "Hindi"
-            ? "./assets/videos/1hi.mp4"
-            : "./assets/videos/1.mp4";
-        if (!songVideo.src.endsWith(videoSrc.replace("./", ""))) {
-            songVideo.src = videoSrc;
-        }
-    }
-
     if (selectedLang === "English") {
 
         document.getElementById("body");

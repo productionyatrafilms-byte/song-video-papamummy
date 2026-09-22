@@ -98,7 +98,12 @@
          real assets/videos/1.mp4 actually plays. -->
     <div class="video-overlay" id="videoOverlay" hidden>
         <video id="songVideo" playsinline controls disablePictureInPicture
-            controlsList="nodownload noremoteplayback"></video>
+            controlsList="nodownload noremoteplayback" src="./assets/videos/1.mp4"></video>
+        <div class="video-overlay-title">
+            <span class="english">Papa Mummy Kahe Vo Bache </span>
+            <span class="hindi">पापा मम्मी कहे वो बच्चे</span>
+            <span class="gujrati">પાપા મમ્મી કહે વો બચ્ચે</span>
+        </div>
         <div class="video-overlay-controls">
             <button type="button" class="btn-video-toggle" id="btnVideoToggle" aria-label="Pause">
                 <img src="./assets/images/pause.png" alt="">
@@ -113,6 +118,7 @@
     <script src="./assets/plugins/gsap.min.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/djp.js"></script>
 </body>
 
 </html>
